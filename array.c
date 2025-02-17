@@ -1,22 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int n, count = 0, target;
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-    int arr[n];
-    printf("Enter the elements of the array: ");
-    for(int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-    printf("Enter the element to search for: ");
-    scanf("%d", &target);
-    for(int i = 0; i < n; i++) {
-        if(arr[i] == target) {
-            count++;
-        }
-    }
-    printf("The element %d occurs %d times.\n", target, count);
-
-    return 0;
+	
+int n,i;
+scanf("%d",&n);
+int arr[n];
+for(i=0;i<n;i++)
+{scanf("%d",&arr[i]);
 }
+int a=sum(arr,n);
+printf("%d",a);
+}
+int sum(int *arr,int n)
+{
+int i,summ=0;
+for(i=0;i<n;i++)
+{
+summ+=*(arr+i);
+}
+return summ;
+}
+	
