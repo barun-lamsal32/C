@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 void even(int l, int u);
 
 int main() {
